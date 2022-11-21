@@ -11,8 +11,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+
+
 import com.programacionandroid.practica_sqlite.R;
 import com.programacionandroid.practica_sqlite.db.DBHelper;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public boolean onCreateOptionMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_principal, menu);
         return true;
     }
 
-    public boolean onOptionItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item){
 
         switch(item.getItemId()){
             case R.id.menuNuevo:

@@ -26,7 +26,15 @@
                 android:value="" />
         </activity>
 
-        <activity android:name=".entidades.NewActivity"></activity>
+        <activity android:name=".entidades.NewActivity"
+            android:exported="false"
+            android:parentActivityName=".entidades.MainActivity">
+        </activity>
+        <meta-data
+            android:name="@android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            >
+        </meta-data>
     </application>
 
 </manifest>

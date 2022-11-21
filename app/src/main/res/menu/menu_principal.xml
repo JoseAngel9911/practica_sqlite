@@ -6,6 +6,6 @@
         android:id="@+id/crearBase"
         android:title="Crear Base de Datos" />
     <item
-        android:id="@+id/menuNuevo"
-        android:title="Nuevo Registro" />
+        android:title="Nuevo Registro"
+        android:id="@+id/menuNuevo" />
 </menu>
